@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CD7DCF6DB033B1E81AA40C9 /* Pods_WebKeyzTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A95643F12CA65E24AC727C64 /* Pods_WebKeyzTask.framework */; };
 		A8B23BFC25BE287900B468E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B23BFB25BE287900B468E7 /* AppDelegate.swift */; };
 		A8B23BFE25BE287900B468E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B23BFD25BE287900B468E7 /* SceneDelegate.swift */; };
 		A8B23C0025BE287900B468E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B23BFF25BE287900B468E7 /* ViewController.swift */; };
@@ -15,6 +16,21 @@
 		A8B23C0825BE287A00B468E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8B23C0625BE287A00B468E7 /* LaunchScreen.storyboard */; };
 		A8B23C1325BE287B00B468E7 /* WebKeyzTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B23C1225BE287B00B468E7 /* WebKeyzTaskTests.swift */; };
 		A8B23C1E25BE287B00B468E7 /* WebKeyzTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B23C1D25BE287B00B468E7 /* WebKeyzTaskUITests.swift */; };
+		A8B23C3225BE298100B468E7 /* WebKeyzRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B23C3025BE298100B468E7 /* WebKeyzRouter.swift */; };
+		A8B23C3325BE298100B468E7 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B23C3125BE298100B468E7 /* NetworkConstants.swift */; };
+		A8B23C3525BE299300B468E7 /* Hotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B23C3425BE299300B468E7 /* Hotel.swift */; };
+		A8B23C3825BE2A1D00B468E7 /* HotelHomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8B23C3725BE2A1D00B468E7 /* HotelHomePage.storyboard */; };
+		A8B23C3A25BE2A9700B468E7 /* HotelHomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B23C3925BE2A9700B468E7 /* HotelHomePageViewController.swift */; };
+		A8B23C3E25BE2B3500B468E7 /* HotelHomePageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B23C3C25BE2B3500B468E7 /* HotelHomePageTableViewCell.swift */; };
+		A8B23C3F25BE2B3500B468E7 /* HotelHomePageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8B23C3D25BE2B3500B468E7 /* HotelHomePageTableViewCell.xib */; };
+		A8B23C4225BE2CF000B468E7 /* DropShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B23C4125BE2CF000B468E7 /* DropShadowView.swift */; };
+		A8B23C4425BE2FEA00B468E7 /* HotelHomePageTableViewCellConfigurProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B23C4325BE2FEA00B468E7 /* HotelHomePageTableViewCellConfigurProtocol.swift */; };
+		A8B23C4825BE339C00B468E7 /* HotelHomePageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B23C4725BE339C00B468E7 /* HotelHomePageInteractor.swift */; };
+		A8B23C4A25BE3AC900B468E7 /* HotelHomePageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B23C4925BE3AC900B468E7 /* HotelHomePageProtocol.swift */; };
+		A8B23C4C25BE3B2400B468E7 /* HotelHomePagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B23C4B25BE3B2400B468E7 /* HotelHomePagePresenter.swift */; };
+		A8B23C4F25BE3D7B00B468E7 /* HotelsViewConteroller+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B23C4E25BE3D7B00B468E7 /* HotelsViewConteroller+Delegate.swift */; };
+		ED56D300A1F9D52081CFEEA7 /* Pods_WebKeyzTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B7AC5D838EB1ACC8CA6E372 /* Pods_WebKeyzTaskTests.framework */; };
+		F1F93FE2785B2388F262819C /* Pods_WebKeyzTask_WebKeyzTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F825087DCEE1265FE3476A12 /* Pods_WebKeyzTask_WebKeyzTaskUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +51,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B7AC5D838EB1ACC8CA6E372 /* Pods_WebKeyzTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebKeyzTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3890B081B3FCF21C52A7F238 /* Pods-WebKeyzTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebKeyzTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-WebKeyzTaskTests/Pods-WebKeyzTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7FC030C1A48A4B5CE5305FB3 /* Pods-WebKeyzTask-WebKeyzTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebKeyzTask-WebKeyzTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-WebKeyzTask-WebKeyzTaskUITests/Pods-WebKeyzTask-WebKeyzTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A8B23BF825BE287900B468E7 /* WebKeyzTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebKeyzTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8B23BFB25BE287900B468E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8B23BFD25BE287900B468E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +68,25 @@
 		A8B23C1925BE287B00B468E7 /* WebKeyzTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebKeyzTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8B23C1D25BE287B00B468E7 /* WebKeyzTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebKeyzTaskUITests.swift; sourceTree = "<group>"; };
 		A8B23C1F25BE287B00B468E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8B23C3025BE298100B468E7 /* WebKeyzRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebKeyzRouter.swift; sourceTree = "<group>"; };
+		A8B23C3125BE298100B468E7 /* NetworkConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		A8B23C3425BE299300B468E7 /* Hotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel.swift; sourceTree = "<group>"; };
+		A8B23C3725BE2A1D00B468E7 /* HotelHomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HotelHomePage.storyboard; sourceTree = "<group>"; };
+		A8B23C3925BE2A9700B468E7 /* HotelHomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelHomePageViewController.swift; sourceTree = "<group>"; };
+		A8B23C3C25BE2B3500B468E7 /* HotelHomePageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelHomePageTableViewCell.swift; sourceTree = "<group>"; };
+		A8B23C3D25BE2B3500B468E7 /* HotelHomePageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotelHomePageTableViewCell.xib; sourceTree = "<group>"; };
+		A8B23C4125BE2CF000B468E7 /* DropShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropShadowView.swift; sourceTree = "<group>"; };
+		A8B23C4325BE2FEA00B468E7 /* HotelHomePageTableViewCellConfigurProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelHomePageTableViewCellConfigurProtocol.swift; sourceTree = "<group>"; };
+		A8B23C4725BE339C00B468E7 /* HotelHomePageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelHomePageInteractor.swift; sourceTree = "<group>"; };
+		A8B23C4925BE3AC900B468E7 /* HotelHomePageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelHomePageProtocol.swift; sourceTree = "<group>"; };
+		A8B23C4B25BE3B2400B468E7 /* HotelHomePagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelHomePagePresenter.swift; sourceTree = "<group>"; };
+		A8B23C4E25BE3D7B00B468E7 /* HotelsViewConteroller+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HotelsViewConteroller+Delegate.swift"; sourceTree = "<group>"; };
+		A95643F12CA65E24AC727C64 /* Pods_WebKeyzTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebKeyzTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B79A476D7D5EA5B4C415A509 /* Pods-WebKeyzTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebKeyzTaskTests.release.xcconfig"; path = "Target Support Files/Pods-WebKeyzTaskTests/Pods-WebKeyzTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		C4B5D58EFBF00B5D4598CC78 /* Pods-WebKeyzTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebKeyzTask.release.xcconfig"; path = "Target Support Files/Pods-WebKeyzTask/Pods-WebKeyzTask.release.xcconfig"; sourceTree = "<group>"; };
+		D7D7F71E3614304819D54BC7 /* Pods-WebKeyzTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebKeyzTask.debug.xcconfig"; path = "Target Support Files/Pods-WebKeyzTask/Pods-WebKeyzTask.debug.xcconfig"; sourceTree = "<group>"; };
+		F2686594EA1AE6C7FBB4BEAC /* Pods-WebKeyzTask-WebKeyzTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebKeyzTask-WebKeyzTaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-WebKeyzTask-WebKeyzTaskUITests/Pods-WebKeyzTask-WebKeyzTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F825087DCEE1265FE3476A12 /* Pods_WebKeyzTask_WebKeyzTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebKeyzTask_WebKeyzTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CD7DCF6DB033B1E81AA40C9 /* Pods_WebKeyzTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED56D300A1F9D52081CFEEA7 /* Pods_WebKeyzTaskTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +110,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1F93FE2785B2388F262819C /* Pods_WebKeyzTask_WebKeyzTaskUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38C563E7FD562C576C0EC0C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A95643F12CA65E24AC727C64 /* Pods_WebKeyzTask.framework */,
+				F825087DCEE1265FE3476A12 /* Pods_WebKeyzTask_WebKeyzTaskUITests.framework */,
+				1B7AC5D838EB1ACC8CA6E372 /* Pods_WebKeyzTaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C7B2DA656D6E3E4BB1A99A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D7D7F71E3614304819D54BC7 /* Pods-WebKeyzTask.debug.xcconfig */,
+				C4B5D58EFBF00B5D4598CC78 /* Pods-WebKeyzTask.release.xcconfig */,
+				F2686594EA1AE6C7FBB4BEAC /* Pods-WebKeyzTask-WebKeyzTaskUITests.debug.xcconfig */,
+				7FC030C1A48A4B5CE5305FB3 /* Pods-WebKeyzTask-WebKeyzTaskUITests.release.xcconfig */,
+				3890B081B3FCF21C52A7F238 /* Pods-WebKeyzTaskTests.debug.xcconfig */,
+				B79A476D7D5EA5B4C415A509 /* Pods-WebKeyzTaskTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A8B23BEF25BE287900B468E7 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +147,8 @@
 				A8B23C1125BE287B00B468E7 /* WebKeyzTaskTests */,
 				A8B23C1C25BE287B00B468E7 /* WebKeyzTaskUITests */,
 				A8B23BF925BE287900B468E7 /* Products */,
+				5C7B2DA656D6E3E4BB1A99A3 /* Pods */,
+				38C563E7FD562C576C0EC0C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +165,10 @@
 		A8B23BFA25BE287900B468E7 /* WebKeyzTask */ = {
 			isa = PBXGroup;
 			children = (
+				A8B23C4025BE2CB200B468E7 /* Extensions */,
+				A8B23C2F25BE295400B468E7 /* NetworkLayer */,
+				A8B23C2E25BE294900B468E7 /* Model */,
+				A8B23C2D25BE292C00B468E7 /* Presentations */,
 				A8B23BFB25BE287900B468E7 /* AppDelegate.swift */,
 				A8B23BFD25BE287900B468E7 /* SceneDelegate.swift */,
 				A8B23BFF25BE287900B468E7 /* ViewController.swift */,
@@ -128,6 +198,103 @@
 			path = WebKeyzTaskUITests;
 			sourceTree = "<group>";
 		};
+		A8B23C2B25BE28FA00B468E7 /* HotelHomePageScene */ = {
+			isa = PBXGroup;
+			children = (
+				A8B23C4D25BE3D5100B468E7 /* Extensions */,
+				A8B23C4625BE337B00B468E7 /* Interactor */,
+				A8B23C4525BE337100B468E7 /* Presenter */,
+				A8B23C3625BE29F000B468E7 /* View */,
+			);
+			path = HotelHomePageScene;
+			sourceTree = "<group>";
+		};
+		A8B23C2C25BE291900B468E7 /* HotelDetailsScene */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HotelDetailsScene;
+			sourceTree = "<group>";
+		};
+		A8B23C2D25BE292C00B468E7 /* Presentations */ = {
+			isa = PBXGroup;
+			children = (
+				A8B23C2B25BE28FA00B468E7 /* HotelHomePageScene */,
+				A8B23C2C25BE291900B468E7 /* HotelDetailsScene */,
+			);
+			path = Presentations;
+			sourceTree = "<group>";
+		};
+		A8B23C2E25BE294900B468E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A8B23C3425BE299300B468E7 /* Hotel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A8B23C2F25BE295400B468E7 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				A8B23C3125BE298100B468E7 /* NetworkConstants.swift */,
+				A8B23C3025BE298100B468E7 /* WebKeyzRouter.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		A8B23C3625BE29F000B468E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8B23C3B25BE2AF700B468E7 /* Cell */,
+				A8B23C3725BE2A1D00B468E7 /* HotelHomePage.storyboard */,
+				A8B23C3925BE2A9700B468E7 /* HotelHomePageViewController.swift */,
+				A8B23C4925BE3AC900B468E7 /* HotelHomePageProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A8B23C3B25BE2AF700B468E7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A8B23C3C25BE2B3500B468E7 /* HotelHomePageTableViewCell.swift */,
+				A8B23C3D25BE2B3500B468E7 /* HotelHomePageTableViewCell.xib */,
+				A8B23C4325BE2FEA00B468E7 /* HotelHomePageTableViewCellConfigurProtocol.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A8B23C4025BE2CB200B468E7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A8B23C4125BE2CF000B468E7 /* DropShadowView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A8B23C4525BE337100B468E7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A8B23C4B25BE3B2400B468E7 /* HotelHomePagePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A8B23C4625BE337B00B468E7 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A8B23C4725BE339C00B468E7 /* HotelHomePageInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A8B23C4D25BE3D5100B468E7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A8B23C4E25BE3D7B00B468E7 /* HotelsViewConteroller+Delegate.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +302,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8B23C2225BE287B00B468E7 /* Build configuration list for PBXNativeTarget "WebKeyzTask" */;
 			buildPhases = (
+				E0E22B7FCCD53A68D2F9206C /* [CP] Check Pods Manifest.lock */,
 				A8B23BF425BE287900B468E7 /* Sources */,
 				A8B23BF525BE287900B468E7 /* Frameworks */,
 				A8B23BF625BE287900B468E7 /* Resources */,
+				91404A1BA796607F8E32D979 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +321,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8B23C2525BE287B00B468E7 /* Build configuration list for PBXNativeTarget "WebKeyzTaskTests" */;
 			buildPhases = (
+				2C01473AEEB7B3A65097A303 /* [CP] Check Pods Manifest.lock */,
 				A8B23C0A25BE287A00B468E7 /* Sources */,
 				A8B23C0B25BE287A00B468E7 /* Frameworks */,
 				A8B23C0C25BE287A00B468E7 /* Resources */,
@@ -170,9 +340,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8B23C2825BE287B00B468E7 /* Build configuration list for PBXNativeTarget "WebKeyzTaskUITests" */;
 			buildPhases = (
+				DF2C3ACA3FE50C2193B76B5A /* [CP] Check Pods Manifest.lock */,
 				A8B23C1525BE287B00B468E7 /* Sources */,
 				A8B23C1625BE287B00B468E7 /* Frameworks */,
 				A8B23C1725BE287B00B468E7 /* Resources */,
+				0E93D235AC3F65A00FD52674 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,7 +404,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8B23C3F25BE2B3500B468E7 /* HotelHomePageTableViewCell.xib in Resources */,
 				A8B23C0825BE287A00B468E7 /* LaunchScreen.storyboard in Resources */,
+				A8B23C3825BE2A1D00B468E7 /* HotelHomePage.storyboard in Resources */,
 				A8B23C0525BE287A00B468E7 /* Assets.xcassets in Resources */,
 				A8B23C0325BE287900B468E7 /* Main.storyboard in Resources */,
 			);
@@ -254,14 +428,128 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0E93D235AC3F65A00FD52674 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WebKeyzTask-WebKeyzTaskUITests/Pods-WebKeyzTask-WebKeyzTaskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WebKeyzTask-WebKeyzTaskUITests/Pods-WebKeyzTask-WebKeyzTaskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WebKeyzTask-WebKeyzTaskUITests/Pods-WebKeyzTask-WebKeyzTaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C01473AEEB7B3A65097A303 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WebKeyzTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91404A1BA796607F8E32D979 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WebKeyzTask/Pods-WebKeyzTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WebKeyzTask/Pods-WebKeyzTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WebKeyzTask/Pods-WebKeyzTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF2C3ACA3FE50C2193B76B5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WebKeyzTask-WebKeyzTaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0E22B7FCCD53A68D2F9206C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WebKeyzTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A8B23BF425BE287900B468E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8B23C3E25BE2B3500B468E7 /* HotelHomePageTableViewCell.swift in Sources */,
+				A8B23C3A25BE2A9700B468E7 /* HotelHomePageViewController.swift in Sources */,
+				A8B23C3525BE299300B468E7 /* Hotel.swift in Sources */,
+				A8B23C4425BE2FEA00B468E7 /* HotelHomePageTableViewCellConfigurProtocol.swift in Sources */,
+				A8B23C4C25BE3B2400B468E7 /* HotelHomePagePresenter.swift in Sources */,
+				A8B23C3225BE298100B468E7 /* WebKeyzRouter.swift in Sources */,
 				A8B23C0025BE287900B468E7 /* ViewController.swift in Sources */,
+				A8B23C4A25BE3AC900B468E7 /* HotelHomePageProtocol.swift in Sources */,
+				A8B23C3325BE298100B468E7 /* NetworkConstants.swift in Sources */,
+				A8B23C4225BE2CF000B468E7 /* DropShadowView.swift in Sources */,
 				A8B23BFC25BE287900B468E7 /* AppDelegate.swift in Sources */,
 				A8B23BFE25BE287900B468E7 /* SceneDelegate.swift in Sources */,
+				A8B23C4F25BE3D7B00B468E7 /* HotelsViewConteroller+Delegate.swift in Sources */,
+				A8B23C4825BE339C00B468E7 /* HotelHomePageInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +720,7 @@
 		};
 		A8B23C2325BE287B00B468E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7D7F71E3614304819D54BC7 /* Pods-WebKeyzTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +738,7 @@
 		};
 		A8B23C2425BE287B00B468E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4B5D58EFBF00B5D4598CC78 /* Pods-WebKeyzTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +756,7 @@
 		};
 		A8B23C2625BE287B00B468E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3890B081B3FCF21C52A7F238 /* Pods-WebKeyzTaskTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +778,7 @@
 		};
 		A8B23C2725BE287B00B468E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B79A476D7D5EA5B4C415A509 /* Pods-WebKeyzTaskTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +800,7 @@
 		};
 		A8B23C2925BE287B00B468E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2686594EA1AE6C7FBB4BEAC /* Pods-WebKeyzTask-WebKeyzTaskUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +820,7 @@
 		};
 		A8B23C2A25BE287B00B468E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FC030C1A48A4B5CE5305FB3 /* Pods-WebKeyzTask-WebKeyzTaskUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
