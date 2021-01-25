@@ -10,6 +10,7 @@ import UIKit
 import Kingfisher
 class HotelDetailViewController: UIViewController {
     
+    @IBOutlet weak var showLocationOnMapBtn: UIButton!
     @IBOutlet weak var highRatePriceLbl: UILabel!
     @IBOutlet weak var lowRatePriceLbl: UILabel!
     @IBOutlet weak var hotelLocationLbl: UILabel!
@@ -19,29 +20,36 @@ class HotelDetailViewController: UIViewController {
     var hotel : Hotel?
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        showLocationOnMapBtn.layer.cornerRadius = 10
+        showLocationOnMapBtn.layer.borderColor = UIColor.init(red: 0/255, green: 125/255, blue: 255/255, alpha: 1).cgColor
+        showLocationOnMapBtn.layer.borderWidth = 1
+        
         setupUI()
         // Do any additional setup after loading the view.
     }
     
     private func setupUI() {
         hotelImageView.kf.setImage(with: URL(string: (hotel?.hotelImageList[0]?.url)!))
-        lowRatePriceLbl.text = hotel?.summary?.lowRate
-        highRatePriceLbl.text = hotel?.summary?.highRate
+        lowRatePriceLbl.text = (hotel?.summary?.lowRate)! + "$"
+        highRatePriceLbl.text = (hotel?.summary?.highRate)! + "$"
         highRatePriceLbl.strikeThroughText()
         hotelNameLbl.text = hotel?.summary?.hotelName
         hotelLocationLbl.text = hotel?.location?.address
         
     }
     
-    /*
-     // MARK: - Navigation
+    @IBAction func showLocationOnMapBtnDidTapped(_ sender: Any) {
+        
+        let hotelLocationMapViewController = storyboard?.instantiateViewController(withIdentifier: "HotelLocationMapViewController") as! HotelLocationMapViewController
+             hotelLocationMapViewController.hotelName = hotel?.summary?.hotelName
+             hotelLocationMapViewController.hotelLatitude = hotel?.location?.latitude
+             hotelLocationMapViewController.hotelLongitude = hotel?.location?.longitude
+               self.navigationController!.pushViewController(hotelLocationMapViewController, animated: true)
+    }
+    
+
      
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
     
 }
 extension UILabel {

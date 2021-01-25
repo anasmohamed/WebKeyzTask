@@ -47,43 +47,109 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCu-xI-q8f">
-                                <rect key="frame" x="79" y="254.5" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="20" y="283" width="59" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                <color key="textColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCh-yB-OUJ">
+                                <rect key="frame" x="10" y="333" width="394" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="mWj-qv-zgx"/>
+                                </constraints>
+                                <state key="normal" title="Show Location on Map">
+                                    <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showLocationOnMapBtnDidTapped:" destination="jXF-g1-rkK" eventType="touchUpInside" id="hNQ-qz-gaC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Mj1-1m-k66" firstAttribute="top" secondItem="Oyu-4w-QkM" secondAttribute="top" id="0w3-B8-r4m"/>
                             <constraint firstItem="Oyu-4w-QkM" firstAttribute="trailing" secondItem="4GN-uB-ZVl" secondAttribute="trailing" constant="20" id="1w4-yU-faL"/>
                             <constraint firstItem="s3X-oj-W95" firstAttribute="leading" secondItem="3VY-mC-sFC" secondAttribute="trailing" constant="10" id="4j0-Uq-VsE"/>
-                            <constraint firstItem="sCu-xI-q8f" firstAttribute="centerY" secondItem="bYm-yE-RdC" secondAttribute="centerY" id="7GW-cI-jlp"/>
+                            <constraint firstItem="sCu-xI-q8f" firstAttribute="top" secondItem="bYm-yE-RdC" secondAttribute="bottom" constant="7.5" id="95v-OM-dCJ"/>
+                            <constraint firstItem="HCh-yB-OUJ" firstAttribute="leading" secondItem="Oyu-4w-QkM" secondAttribute="leading" constant="10" id="B1Y-Q5-2Me"/>
                             <constraint firstItem="Oyu-4w-QkM" firstAttribute="trailing" secondItem="s3X-oj-W95" secondAttribute="trailing" constant="20" id="Hr8-bb-rPF"/>
                             <constraint firstItem="4GN-uB-ZVl" firstAttribute="top" secondItem="Mj1-1m-k66" secondAttribute="bottom" constant="8" id="KLm-bo-JQy"/>
                             <constraint firstItem="Oyu-4w-QkM" firstAttribute="trailing" secondItem="Mj1-1m-k66" secondAttribute="trailing" id="PAb-mg-0l0"/>
                             <constraint firstItem="3VY-mC-sFC" firstAttribute="centerY" secondItem="s3X-oj-W95" secondAttribute="centerY" id="X6b-5v-p6U"/>
                             <constraint firstItem="bYm-yE-RdC" firstAttribute="top" secondItem="3VY-mC-sFC" secondAttribute="bottom" constant="23.5" id="ath-9t-CvS"/>
                             <constraint firstItem="Oyu-4w-QkM" firstAttribute="leading" secondItem="3VY-mC-sFC" secondAttribute="leading" constant="-20" id="bpg-MQ-dhE"/>
+                            <constraint firstItem="sCu-xI-q8f" firstAttribute="leading" secondItem="Oyu-4w-QkM" secondAttribute="leading" constant="20" id="dKY-Ma-tLt"/>
                             <constraint firstItem="4GN-uB-ZVl" firstAttribute="leading" secondItem="Oyu-4w-QkM" secondAttribute="leading" constant="20" id="f4v-o7-WDD"/>
                             <constraint firstItem="s3X-oj-W95" firstAttribute="top" secondItem="4GN-uB-ZVl" secondAttribute="bottom" constant="8" id="hzv-dD-b45"/>
-                            <constraint firstItem="sCu-xI-q8f" firstAttribute="leading" secondItem="bYm-yE-RdC" secondAttribute="trailing" constant="17" id="kw9-fV-LQ7"/>
+                            <constraint firstItem="HCh-yB-OUJ" firstAttribute="centerX" secondItem="Oyu-4w-QkM" secondAttribute="centerX" id="k5D-Od-iDz"/>
+                            <constraint firstItem="Oyu-4w-QkM" firstAttribute="trailing" secondItem="HCh-yB-OUJ" secondAttribute="trailing" constant="10" id="m0A-Qk-YZ9"/>
+                            <constraint firstItem="HCh-yB-OUJ" firstAttribute="top" secondItem="sCu-xI-q8f" secondAttribute="bottom" constant="21" id="mQp-ht-JkC"/>
                             <constraint firstItem="bYm-yE-RdC" firstAttribute="leading" secondItem="Oyu-4w-QkM" secondAttribute="leading" constant="20" id="y5u-nn-LSo"/>
                             <constraint firstItem="Mj1-1m-k66" firstAttribute="leading" secondItem="Oyu-4w-QkM" secondAttribute="leading" id="zas-2G-5tR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Oyu-4w-QkM"/>
                     </view>
                     <connections>
-                        <outlet property="highRatePriceLbl" destination="sCu-xI-q8f" id="d54-70-3g9"/>
+                        <outlet property="highRatePriceLbl" destination="bYm-yE-RdC" id="Bqi-Yv-XnG"/>
                         <outlet property="hotelImageView" destination="Mj1-1m-k66" id="yCN-V7-VNH"/>
                         <outlet property="hotelLocationLbl" destination="s3X-oj-W95" id="j1C-Fu-bKV"/>
                         <outlet property="hotelNameLbl" destination="4GN-uB-ZVl" id="ue9-1K-8rb"/>
-                        <outlet property="lowRatePriceLbl" destination="bYm-yE-RdC" id="H6q-5j-uog"/>
+                        <outlet property="lowRatePriceLbl" destination="sCu-xI-q8f" id="pRR-zG-Hca"/>
+                        <outlet property="showLocationOnMapBtn" destination="HCh-yB-OUJ" id="aSc-yC-inP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6K6-fu-Sgd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="79.710144927536234" y="49.553571428571423"/>
+        </scene>
+        <!--Hotel Location Map View Controller-->
+        <scene sceneID="eTv-Zq-vdL">
+            <objects>
+                <viewController storyboardIdentifier="HotelLocationMapViewController" id="yhS-Cy-8oI" customClass="HotelLocationMapViewController" customModule="WebKeyzTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PZ9-Tm-ihq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="f3f-fF-2Q3">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="f3f-fF-2Q3" firstAttribute="leading" secondItem="Wze-pP-kTM" secondAttribute="leading" id="1ni-Pg-MR6"/>
+                            <constraint firstItem="f3f-fF-2Q3" firstAttribute="top" secondItem="Wze-pP-kTM" secondAttribute="top" id="Buq-Ct-fvW"/>
+                            <constraint firstItem="Wze-pP-kTM" firstAttribute="bottom" secondItem="f3f-fF-2Q3" secondAttribute="bottom" id="bCm-uk-krT"/>
+                            <constraint firstItem="Wze-pP-kTM" firstAttribute="trailing" secondItem="f3f-fF-2Q3" secondAttribute="trailing" id="sqh-e1-XPY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wze-pP-kTM"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Djr-jk-SPV"/>
+                    <connections>
+                        <outlet property="hotelLocationMapView" destination="f3f-fF-2Q3" id="lUH-1s-NOf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ng1-uY-Ouf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1756.521739130435" y="40.848214285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Sc3-IV-Msd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="t0L-Vc-K7C" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4Cm-pi-O2o">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yhS-Cy-8oI" kind="relationship" relationship="rootViewController" id="Xok-mr-BqY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2l9-yz-dD7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="846.37681159420299" y="40.848214285714285"/>
         </scene>
     </scenes>
     <resources>
