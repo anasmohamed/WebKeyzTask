@@ -42,9 +42,11 @@ class HotelHomePagePresenter {
     func hotelsCount() -> Int {
         return hotelsList.count
     }
+    func hotel(index: Int) -> Hotel {
+        return hotelsList[index]
+    }
     
-    
-    func configure(cell: HotelHomePageTableViewCellConfigureProtocol, for index: Int) {
+    func configure(cell: HotelHomePageCollectionViewCellConfigureProtocol, for index: Int) {
         let hotel = hotelsList[index]
         guard let hotelName = hotel.summary?.hotelName, let hotelImage = hotel.hotelImageList[0]?.url else{
             return

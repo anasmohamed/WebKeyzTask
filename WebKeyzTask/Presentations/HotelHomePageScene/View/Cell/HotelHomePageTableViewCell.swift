@@ -7,8 +7,9 @@
 //
 
 import UIKit
-import SDWebImage
-class HotelHomePageTableViewCell: UITableViewCell,HotelHomePageTableViewCellConfigureProtocol{
+import Kingfisher
+class HotelHomePageCollectionViewCell: UICollectionViewCell,HotelHomePageCollectionViewCellConfigureProtocol,HotelLayoutDelegate{
+  
     
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var containerView: DropShadowView!
@@ -29,14 +30,13 @@ class HotelHomePageTableViewCell: UITableViewCell,HotelHomePageTableViewCellConf
         mainView.clipsToBounds = true
     }
     
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        
-        // Configure the view for the selected state
-    }
+   
     func configure(hotelImage: String, hotelName: String) {
         hotelNameLbl.text = hotelName
-        hotelImageView.sd_setImage(with: URL(string: hotelImage))
+        hotelImageView.kf.setImage(with: URL(string: hotelImage))
     }
-    
+    func collectionView(_ collectionView: UICollectionView, heightForPhotoAtIndexPath indexPath: IndexPath) -> CGFloat {
+        return (hotelImageView.image?.size.height)!
+      }
+      
 }

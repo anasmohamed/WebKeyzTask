@@ -7,6 +7,6 @@
 //
 
 import Foundation
-protocol HotelHomePageTableViewCellConfigureProtocol {
+protocol HotelHomePageCollectionViewCellConfigureProtocol {
     func configure(hotelImage:String,hotelName:String)
 }

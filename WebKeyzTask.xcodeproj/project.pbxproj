@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		4CD7DCF6DB033B1E81AA40C9 /* Pods_WebKeyzTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A95643F12CA65E24AC727C64 /* Pods_WebKeyzTask.framework */; };
+		A83E3B6225BF1204009A91EF /* HotelsLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83E3B6125BF1204009A91EF /* HotelsLayout.swift */; };
+		A83E3B6425BF1298009A91EF /* HotelsCollectionView+LayoutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83E3B6325BF1298009A91EF /* HotelsCollectionView+LayoutDelegate.swift */; };
+		A83E3B6725BF21FD009A91EF /* HotelDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A83E3B6625BF21FD009A91EF /* HotelDetails.storyboard */; };
+		A83E3B6925BF2845009A91EF /* HotelDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83E3B6825BF2845009A91EF /* HotelDetailViewController.swift */; };
 		A8B23BFC25BE287900B468E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B23BFB25BE287900B468E7 /* AppDelegate.swift */; };
 		A8B23BFE25BE287900B468E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B23BFD25BE287900B468E7 /* SceneDelegate.swift */; };
 		A8B23C0025BE287900B468E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B23BFF25BE287900B468E7 /* ViewController.swift */; };
@@ -22,7 +26,7 @@
 		A8B23C3825BE2A1D00B468E7 /* HotelHomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8B23C3725BE2A1D00B468E7 /* HotelHomePage.storyboard */; };
 		A8B23C3A25BE2A9700B468E7 /* HotelHomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B23C3925BE2A9700B468E7 /* HotelHomePageViewController.swift */; };
 		A8B23C3E25BE2B3500B468E7 /* HotelHomePageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B23C3C25BE2B3500B468E7 /* HotelHomePageTableViewCell.swift */; };
-		A8B23C3F25BE2B3500B468E7 /* HotelHomePageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8B23C3D25BE2B3500B468E7 /* HotelHomePageTableViewCell.xib */; };
+		A8B23C3F25BE2B3500B468E7 /* HotelHomePageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8B23C3D25BE2B3500B468E7 /* HotelHomePageCollectionViewCell.xib */; };
 		A8B23C4225BE2CF000B468E7 /* DropShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B23C4125BE2CF000B468E7 /* DropShadowView.swift */; };
 		A8B23C4425BE2FEA00B468E7 /* HotelHomePageTableViewCellConfigurProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B23C4325BE2FEA00B468E7 /* HotelHomePageTableViewCellConfigurProtocol.swift */; };
 		A8B23C4825BE339C00B468E7 /* HotelHomePageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B23C4725BE339C00B468E7 /* HotelHomePageInteractor.swift */; };
@@ -54,6 +58,10 @@
 		1B7AC5D838EB1ACC8CA6E372 /* Pods_WebKeyzTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebKeyzTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3890B081B3FCF21C52A7F238 /* Pods-WebKeyzTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebKeyzTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-WebKeyzTaskTests/Pods-WebKeyzTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7FC030C1A48A4B5CE5305FB3 /* Pods-WebKeyzTask-WebKeyzTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebKeyzTask-WebKeyzTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-WebKeyzTask-WebKeyzTaskUITests/Pods-WebKeyzTask-WebKeyzTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A83E3B6125BF1204009A91EF /* HotelsLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelsLayout.swift; sourceTree = "<group>"; };
+		A83E3B6325BF1298009A91EF /* HotelsCollectionView+LayoutDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HotelsCollectionView+LayoutDelegate.swift"; sourceTree = "<group>"; };
+		A83E3B6625BF21FD009A91EF /* HotelDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HotelDetails.storyboard; sourceTree = "<group>"; };
+		A83E3B6825BF2845009A91EF /* HotelDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelDetailViewController.swift; sourceTree = "<group>"; };
 		A8B23BF825BE287900B468E7 /* WebKeyzTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebKeyzTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8B23BFB25BE287900B468E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8B23BFD25BE287900B468E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,7 +82,7 @@
 		A8B23C3725BE2A1D00B468E7 /* HotelHomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HotelHomePage.storyboard; sourceTree = "<group>"; };
 		A8B23C3925BE2A9700B468E7 /* HotelHomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelHomePageViewController.swift; sourceTree = "<group>"; };
 		A8B23C3C25BE2B3500B468E7 /* HotelHomePageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelHomePageTableViewCell.swift; sourceTree = "<group>"; };
-		A8B23C3D25BE2B3500B468E7 /* HotelHomePageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotelHomePageTableViewCell.xib; sourceTree = "<group>"; };
+		A8B23C3D25BE2B3500B468E7 /* HotelHomePageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotelHomePageCollectionViewCell.xib; sourceTree = "<group>"; };
 		A8B23C4125BE2CF000B468E7 /* DropShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropShadowView.swift; sourceTree = "<group>"; };
 		A8B23C4325BE2FEA00B468E7 /* HotelHomePageTableViewCellConfigurProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelHomePageTableViewCellConfigurProtocol.swift; sourceTree = "<group>"; };
 		A8B23C4725BE339C00B468E7 /* HotelHomePageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelHomePageInteractor.swift; sourceTree = "<group>"; };
@@ -138,6 +146,15 @@
 				B79A476D7D5EA5B4C415A509 /* Pods-WebKeyzTaskTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A83E3B6525BF21DD009A91EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A83E3B6625BF21FD009A91EF /* HotelDetails.storyboard */,
+				A83E3B6825BF2845009A91EF /* HotelDetailViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		A8B23BEF25BE287900B468E7 = {
@@ -212,6 +229,7 @@
 		A8B23C2C25BE291900B468E7 /* HotelDetailsScene */ = {
 			isa = PBXGroup;
 			children = (
+				A83E3B6525BF21DD009A91EF /* View */,
 			);
 			path = HotelDetailsScene;
 			sourceTree = "<group>";
@@ -257,7 +275,7 @@
 			isa = PBXGroup;
 			children = (
 				A8B23C3C25BE2B3500B468E7 /* HotelHomePageTableViewCell.swift */,
-				A8B23C3D25BE2B3500B468E7 /* HotelHomePageTableViewCell.xib */,
+				A8B23C3D25BE2B3500B468E7 /* HotelHomePageCollectionViewCell.xib */,
 				A8B23C4325BE2FEA00B468E7 /* HotelHomePageTableViewCellConfigurProtocol.swift */,
 			);
 			path = Cell;
@@ -291,6 +309,8 @@
 			isa = PBXGroup;
 			children = (
 				A8B23C4E25BE3D7B00B468E7 /* HotelsViewConteroller+Delegate.swift */,
+				A83E3B6125BF1204009A91EF /* HotelsLayout.swift */,
+				A83E3B6325BF1298009A91EF /* HotelsCollectionView+LayoutDelegate.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -404,7 +424,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8B23C3F25BE2B3500B468E7 /* HotelHomePageTableViewCell.xib in Resources */,
+				A8B23C3F25BE2B3500B468E7 /* HotelHomePageCollectionViewCell.xib in Resources */,
+				A83E3B6725BF21FD009A91EF /* HotelDetails.storyboard in Resources */,
 				A8B23C0825BE287A00B468E7 /* LaunchScreen.storyboard in Resources */,
 				A8B23C3825BE2A1D00B468E7 /* HotelHomePage.storyboard in Resources */,
 				A8B23C0525BE287A00B468E7 /* Assets.xcassets in Resources */,
@@ -537,6 +558,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8B23C3E25BE2B3500B468E7 /* HotelHomePageTableViewCell.swift in Sources */,
+				A83E3B6925BF2845009A91EF /* HotelDetailViewController.swift in Sources */,
+				A83E3B6225BF1204009A91EF /* HotelsLayout.swift in Sources */,
 				A8B23C3A25BE2A9700B468E7 /* HotelHomePageViewController.swift in Sources */,
 				A8B23C3525BE299300B468E7 /* Hotel.swift in Sources */,
 				A8B23C4425BE2FEA00B468E7 /* HotelHomePageTableViewCellConfigurProtocol.swift in Sources */,
@@ -549,6 +572,7 @@
 				A8B23BFC25BE287900B468E7 /* AppDelegate.swift in Sources */,
 				A8B23BFE25BE287900B468E7 /* SceneDelegate.swift in Sources */,
 				A8B23C4F25BE3D7B00B468E7 /* HotelsViewConteroller+Delegate.swift in Sources */,
+				A83E3B6425BF1298009A91EF /* HotelsCollectionView+LayoutDelegate.swift in Sources */,
 				A8B23C4825BE339C00B468E7 /* HotelHomePageInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -654,7 +678,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -708,7 +732,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

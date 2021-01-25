@@ -7,8 +7,8 @@ target 'WebKeyzTask' do
   
   # Pods for WebKeyzTask
   pod 'Alamofire', '~> 5.2'
-  pod 'SDWebImage', '~> 5.0'
   pod 'SwiftyJSON', '~> 4.0'
+  pod 'Kingfisher', '~> 5.0'
 
   target 'WebKeyzTaskTests' do
     inherit! :search_paths
