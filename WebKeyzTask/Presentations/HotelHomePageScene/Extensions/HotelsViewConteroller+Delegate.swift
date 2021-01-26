@@ -20,6 +20,7 @@ extension HotelHomePageViewController : HotelHomePageProtocol{
     
     func getHotelsSuccess() {
         activityIndicator.stopAnimating()
+      
         hotelsCollectionView.reloadData()
     }
     

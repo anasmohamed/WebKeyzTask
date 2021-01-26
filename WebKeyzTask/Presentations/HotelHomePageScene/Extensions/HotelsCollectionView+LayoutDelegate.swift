@@ -12,6 +12,8 @@
 //  func collectionView(
 //      _ collectionView: UICollectionView,
 //      heightForPhotoAtIndexPath indexPath:IndexPath) -> CGFloat {
-//    return hotelHomePagePresenter.[indexPath.item].image.size.height
+//    let cell = collectionView.cellForItem(at: indexPath) as! HotelHomePageCollectionViewCell
+//   
+//    return  (cell.hotelImageView.image?.size.height)!
 //  }
 //}

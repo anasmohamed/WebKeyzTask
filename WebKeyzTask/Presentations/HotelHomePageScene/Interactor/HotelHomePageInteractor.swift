@@ -48,12 +48,12 @@ class HotelHomePageInteractor {
                 print(json)
                 var hotelsList = [Hotel]()
                 let hotels = json["hotel"].arrayValue
-                
+                let hotelCache = NSCache<NSString,Hotel>()
                 
                 for hotel in hotels
                 {
                     let data = Hotel(withJson: hotel)
-                    
+                    hotelCache.setObject(data!, forKey:NSString(string: (data?.hotelId!)!))
                     hotelsList.append(data!)
                     
                 }

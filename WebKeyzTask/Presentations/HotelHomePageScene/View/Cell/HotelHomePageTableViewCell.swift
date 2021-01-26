@@ -8,18 +8,19 @@
 
 import UIKit
 import Kingfisher
-class HotelHomePageCollectionViewCell: UICollectionViewCell,HotelHomePageCollectionViewCellConfigureProtocol,HotelLayoutDelegate{
+class HotelHomePageCollectionViewCell: UICollectionViewCell,HotelHomePageCollectionViewCellConfigureProtocol{
   
     
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var containerView: DropShadowView!
     @IBOutlet weak var hotelNameLbl: UILabel!
     @IBOutlet weak var hotelImageView: UIImageView!
+    
     let cornerRadius : CGFloat = 5.0
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+      
         containerView.layer.cornerRadius = cornerRadius
         containerView.layer.shadowColor = UIColor.gray.cgColor
         containerView.layer.shadowOffset = CGSize(width: 5.0, height: 5.0)
@@ -35,8 +36,6 @@ class HotelHomePageCollectionViewCell: UICollectionViewCell,HotelHomePageCollect
         hotelNameLbl.text = hotelName
         hotelImageView.kf.setImage(with: URL(string: hotelImage))
     }
-    func collectionView(_ collectionView: UICollectionView, heightForPhotoAtIndexPath indexPath: IndexPath) -> CGFloat {
-        return (hotelImageView.image?.size.height)!
-      }
+ 
       
 }

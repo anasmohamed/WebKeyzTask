@@ -11,7 +11,7 @@ protocol HotelLayoutDelegate: AnyObject {
     func collectionView(_ collectionView: UICollectionView, heightForPhotoAtIndexPath indexPath: IndexPath) -> CGFloat
     
   }
-class HotelsLayout: UICollectionViewLayout {
+class HotelLayout: UICollectionViewLayout {
 
       // 1
       weak var delegate: HotelLayoutDelegate?

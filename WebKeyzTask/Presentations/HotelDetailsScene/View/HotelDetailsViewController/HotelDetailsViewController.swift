@@ -8,7 +8,7 @@
 
 import UIKit
 import Kingfisher
-class HotelDetailViewController: UIViewController {
+class HotelDetailsViewController: UIViewController {
     
     @IBOutlet weak var showLocationOnMapBtn: UIButton!
     @IBOutlet weak var highRatePriceLbl: UILabel!
@@ -24,7 +24,8 @@ class HotelDetailViewController: UIViewController {
         showLocationOnMapBtn.layer.cornerRadius = 10
         showLocationOnMapBtn.layer.borderColor = UIColor.init(red: 0/255, green: 125/255, blue: 255/255, alpha: 1).cgColor
         showLocationOnMapBtn.layer.borderWidth = 1
-        
+        let hotelImageViewTap = UITapGestureRecognizer(target: self, action: #selector(handleHotelImageTapped(tapGestureRecognizer:)))
+        hotelImageView.addGestureRecognizer(hotelImageViewTap)
         setupUI()
         // Do any additional setup after loading the view.
     }
@@ -42,20 +43,30 @@ class HotelDetailViewController: UIViewController {
     @IBAction func showLocationOnMapBtnDidTapped(_ sender: Any) {
         
         let hotelLocationMapViewController = storyboard?.instantiateViewController(withIdentifier: "HotelLocationMapViewController") as! HotelLocationMapViewController
-             hotelLocationMapViewController.hotelName = hotel?.summary?.hotelName
-             hotelLocationMapViewController.hotelLatitude = hotel?.location?.latitude
-             hotelLocationMapViewController.hotelLongitude = hotel?.location?.longitude
-               self.navigationController!.pushViewController(hotelLocationMapViewController, animated: true)
+        hotelLocationMapViewController.hotelName = hotel?.summary?.hotelName
+        hotelLocationMapViewController.hotelLatitude = hotel?.location?.latitude
+        hotelLocationMapViewController.hotelLongitude = hotel?.location?.longitude
+        self.navigationController!.pushViewController(hotelLocationMapViewController, animated: true)
     }
     
+    @objc func handleHotelImageTapped(tapGestureRecognizer: UITapGestureRecognizer)
+    {
+        let hotelPopupImageViewController = storyboard?.instantiateViewController(withIdentifier: "HotelPopupImageViewController") as! HotelPopupImageViewController
+      //  hotelPopupImageViewController.hotelImage = hotel?.hotelImageList[0]?.url
+        hotelPopupImageViewController.hotelImage = hotelImageView.image
 
-     
+        hotelPopupImageViewController.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+        print(hotel?.hotelImageList[0]?.url)
+        self.present(hotelPopupImageViewController, animated: true)
+        
+    }
+    
     
 }
 extension UILabel {
-  func strikeThroughText() {
-    let attributeString =  NSMutableAttributedString(string: self.text ?? "")
-    attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: NSUnderlineStyle.single.rawValue, range: NSMakeRange(0,attributeString.length))
-    self.attributedText = attributeString
-  }
+    func strikeThroughText() {
+        let attributeString =  NSMutableAttributedString(string: self.text ?? "")
+        attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: NSUnderlineStyle.single.rawValue, range: NSMakeRange(0,attributeString.length))
+        self.attributedText = attributeString
+    }
 }

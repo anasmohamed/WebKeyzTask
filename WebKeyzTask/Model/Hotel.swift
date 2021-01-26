@@ -8,8 +8,18 @@
 
 import Foundation
 import SwiftyJSON
+struct CachableHotels: Cachable, Codable {
+    let hotels: [Hotel]
 
-class Hotel{
+    var fileName: String {
+        return "hotels"
+    }
+
+    init(hotels: [Hotel]) {
+        self.hotels = hotels
+    }
+}
+class Hotel : Codable{
     var hotelId : String?
     var hotelImageList = [HotelImages?]()
     var location : HotelLocation?
@@ -26,14 +36,22 @@ class Hotel{
             self.hotelImageList.append(imageData)
         }
     }
+    enum CodingKeys : String, CodingKey {
+        case hotelId = "hotelId"
+        
+    }
 }
-class HotelImages {
+
+class HotelImages:Codable {
     var url : String?
     init(withJson data:JSON) {
         self.url = data["url"].stringValue
     }
+    enum CodingKeys : String, CodingKey {
+        case url = "url"
+    }
 }
-class HotelSummary {
+class HotelSummary :Codable{
     var highRate : String?
     var hotelName : String?
     var lowRate : String?
@@ -42,8 +60,15 @@ class HotelSummary {
         self.hotelName = data["hotelName"].stringValue
         self.lowRate = data["lowRate"].stringValue
     }
+    enum CodingKeys : String, CodingKey {
+        
+        case highRate = "highRate"
+        case hotelName = "hotelName"
+        case lowRate = "lowRate"
+        
+    }
 }
-class HotelLocation {
+class HotelLocation:Codable {
     var address : String?
     var latitude : String?
     var longitude : String?
@@ -51,6 +76,13 @@ class HotelLocation {
         self.address = data["address"].stringValue
         self.latitude = data["latitude"].stringValue
         self.longitude = data["longitude"].stringValue
+        
+    }
+    enum CodingKeys : String, CodingKey {
+        
+        case address = "address"
+        case latitude = "latitude"
+        case longitude = "longitude"
         
     }
 }

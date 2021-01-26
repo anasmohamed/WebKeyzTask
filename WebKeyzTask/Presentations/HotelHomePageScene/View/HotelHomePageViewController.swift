@@ -27,8 +27,13 @@ UICollectionViewDelegateFlowLayout{
         hotelsCollectionView.dataSource = self
         hotelHomePagePresenter.getHotels()
         setupCollectionView()
+//        if let layout = hotelsCollectionView.collectionViewLayout as? HotelLayout {
+//            layout.delegate = self
+//        }
         // Do any additional setup after loading the view.
     }
+    
+    
     func setupCollectionView()  {
         hotelsCollectionView.register(UINib(nibName: hotelHomePageCollectionViewCellIdentifier, bundle: nil), forCellWithReuseIdentifier: hotelHomePageCollectionViewCellIdentifier)
     }
@@ -45,16 +50,17 @@ UICollectionViewDelegateFlowLayout{
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let hotelDetailsStoryboard = UIStoryboard.init(name: "HotelDetails", bundle: nil)
-        let hotelDetailViewController = hotelDetailsStoryboard.instantiateViewController(withIdentifier: "HotelDetailViewController") as! HotelDetailViewController
+        let hotelDetailViewController = hotelDetailsStoryboard.instantiateViewController(withIdentifier: "HotelDetailViewController") as! HotelDetailsViewController
         hotelDetailViewController.hotel = hotelHomePagePresenter.hotel(index: indexPath.row)
         self.navigationController!.pushViewController(hotelDetailViewController, animated: true)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width : CGFloat
         let height : CGFloat
-        width = 150
-        height = 150
+        width = 200
+        height = 200
         return CGSize(width: width, height: height)
         
     }
+  
 }
